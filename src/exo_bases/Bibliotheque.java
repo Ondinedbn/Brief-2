@@ -11,7 +11,7 @@ public class Bibliotheque {
 		maBibliotheque.add(unlivre);
 	}
 
-	// méthode pour afficher les infos d'un livre
+	// Méthode pour afficher les infos d'un livre
 	public String toString() {
 		String r = "";
 		for (Livre unlivre : maBibliotheque) {

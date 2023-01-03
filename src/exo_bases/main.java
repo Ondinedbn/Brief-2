@@ -35,6 +35,7 @@ public class main {
 
 	}
 
+	// Exercice 1
 	public static String countLetters(String str) {
 		Map<Character, Integer> map = new HashMap<Character, Integer>();
 		for (int i = 0; i < str.length(); i++) {
@@ -55,12 +56,11 @@ public class main {
 
 	// Exercice 3
 	public static String replaceWithStars(String input) {
-		char[] chars = input.toCharArray();
-		for (int i = 0; i < chars.length; i = i + 2) {
-			chars[i] = '*';
-			input = Arrays.toString(chars).replace(',', ' ');
+		StringBuilder sb = new StringBuilder(input);
+		for (int i = 0; i < sb.length(); i = i + 2) {
+			sb.setCharAt(i, '*');
 		}
-		return input;
+		return sb.toString();
 	}
 
 }
